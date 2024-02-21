@@ -1,0 +1,100 @@
+.tasks .task span {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+display: flex;
+flex-direction: column;
+
+}
+
+.form {
+  background-color: $background-color;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  flex: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.add {
+  border: none;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tasks {
+  background-color: $background-color;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid $border-color;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
+
+  &.done {
+    opacity: 0.5;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%; 
+    min-width: 340px;
+  }
+
+  .form {
+    width: 90%; /* Set the form width to 100% for smaller screens */
+  }
+}
+
+
