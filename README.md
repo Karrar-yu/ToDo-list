@@ -16,6 +16,6 @@ A simple to-do list web application built with HTML, Sass, and JavaScript.
 - Tasks are stored locally so you won't lose them even after closing the browser
 
 ## Usage
-https://sashayuu.github.io/ToDo-list/
+https://karrar-yu.github.io/ToDo-list/
 
 
